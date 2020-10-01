@@ -2,6 +2,8 @@
   <head>
     <link rel="stylesheet" href="stylesheet.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -25,7 +27,7 @@
       <div class="icon-product">
         <img src="../icons/percentage.svg" />
         <div class="card-product-infos">
-          <h2>Lorem ipsum</h2>
+          <h2>Lorem. Ipsum.</h2>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
@@ -33,14 +35,14 @@
         <img src="../icons/pencil.svg" />
         <div class="card-product-infos">
           <h2>Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>lorem ipsum dolor sit amet</p>
         </div>
       </div>
       <div class="icon-product">
         <img src="../icons/product-pile.svg" />
         <div class="card-product-infos">
           <h2>Lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>lorem ipsum dolor sit amet</p>
         </div>
       </div>
     </div>
@@ -74,16 +76,27 @@
     </div>
     <div class="api-container">
       <div class="headline">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
       </div>
-      <div class="api-button">
-        <p> API GOES HERE </p>
-        <button type="submit" class="btn">Click Here</button>
+        <div class="swiper-container">
+          <script>
+            var mySwiper = new Swiper('.swiper-container', {
+              direction: 'horizontal',
+              loop: true
+            });
+          </script>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          <button type="submit" class="btn">Click Here</button>
       </div>
     </div>
     <div class="howto-container">
       <div class="headline">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
       </div>
       <div class="howto-product">
         <img src="https://image.spreadshirtmedia.net/content/q_60,f_auto,w_752/v27/cms/ml/howTo/step-04_monitor-shirts-uk" />
