@@ -1,5 +1,6 @@
-$font-stack: Arial, sans-serif;
 @import "bootstrap/scss/bootstrap";
+
+$font-stack: Arial, sans-serif;
 
 .container {
   height: 400px;
@@ -45,6 +46,57 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   margin-left: 800px;
 }
 
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: #01A99D;
+  background-size: cover;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: white;
+  background-color: #00877E;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
 .icon-category {
   background-size: cover;
   background-position: center;
@@ -78,36 +130,36 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 img {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
+  .icons {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) {
-  .cards {
+  .icons {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 768px) {
-  .cards {
+  .icons {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .cards {
+  .icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 1200px) {
-  .cards {
+  .icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
