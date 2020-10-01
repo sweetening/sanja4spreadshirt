@@ -1,9 +1,4 @@
 $font-stack: Arial, sans-serif;
-
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/swiper-bundle.css';
-
 .container {
   height: 400px;
   width: 400px;
@@ -175,16 +170,15 @@ a {
   color: #01A99D !important;
 }
 
-.api-container {
-  background-color: #F2F2F2;
-  height: 300px;
-  margin: 0 auto;
-  background-size: cover;
-}
-
 .swiper-container {
     width: 600px;
     height: 300px;
+    .swiper-slide {
+      background-color: #F2F2F2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 }
 
 .howto-container {
@@ -198,7 +192,7 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-left: 150px;
 }
 
