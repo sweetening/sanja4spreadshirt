@@ -62,54 +62,38 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   background-color: #00877E;
 }
 
-.card-product {
+.icon-product {
   overflow: hidden;
-  height: 120px;
+  height: 100px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+.icon-product img {
+  height: 50%;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
 
-.card-product h2 {
+.icon-product h2 {
   font-size: 16px;
+  padding-left: 20px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-product p {
+.icon-product p {
   font-size: 12px;
+  padding-left: 20px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
 }
 
-.card-product .card-product-infos {
+.icon-product .icon-product-infos {
   padding: 16px;
-}
-
-.icon-category {
-  background-size: cover;
-  background-position: center;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 0 auto;
 }
 
 .icons {
@@ -117,19 +101,6 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 10px;
-}
-
-.icon-text {
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  color: black;
-}
-
-img {
-  height: 25px;
-  width: 25px;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -161,4 +132,81 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.headline {
+  font-size: 24px;
+  text-align: center;
+  padding: 40px;
+}
 
+.card-product {
+  overflow: hidden;
+  height: 140px;
+  background: #F2F2F2;
+  display: flex;
+  align-items: right;
+  margin-bottom: 40px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #01A99D !important;
+}
+
+.api-container {
+  background-color: #F2F2F2;
+  height: 300px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.howto-container {
+  height: 500px;
+}
+
+.howto-product {
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.howto-product img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+}
+
+.howto-product h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+}
+
+.howto-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  padding: 20px;
+}
