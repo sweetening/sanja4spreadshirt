@@ -26,7 +26,7 @@ body {
   }
 }
 
-.card-trip-infos {
+.banner-info {
   padding: 16px;
   width: 300px;
   height: 300px;
@@ -45,9 +45,8 @@ body {
   padding: 10px;
   margin-top: 30px;
   text-decoration: none;
-  background-color: #01A99D !important;
-  color: white !important;
-  border-radius: 0px !important;
+  background-color: #01A99D;
+  color: white;
   border: none;
   &:hover {
     text-decoration: none;
@@ -59,7 +58,7 @@ body {
 
 .media {
   overflow: hidden;
-  height: 100px;
+  height: 140px;
   background: white;
   display: flex;
   align-items: center;
@@ -75,6 +74,7 @@ body {
   }
   .media-body {
     padding: 16px;
+    margin-top: 10px;
     h2 {
       font-size: 16px;
       padding-left: 20px;
@@ -86,7 +86,6 @@ body {
       padding-left: 20px;
       line-height: 1.4;
       opacity: .7;
-      margin-bottom: 0;
       margin-top: 8px;
     }
   }
@@ -100,49 +99,63 @@ body {
 }
 .howto-container {
   height: 500px;
-}
-
-.howto-product {
-  overflow: hidden;
-  height: 200px;
-  background: white;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-left: 150px;
-}
-
-.howto-product img {
-  height: 100%;
-  width: 300px;
-  object-fit: cover;
-}
-
-.howto-product h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  padding: 20px;
-}
-
-.howto-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-  padding: 20px;
+  .howto-product {
+    overflow: hidden;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-left: 330px;
+    img {
+      height: 100%;
+      width: 280px;
+      object-fit: cover;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px;
+      padding-left: 30px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 2px;
+      padding: 2px;
+      padding-left: 30px;
+    }
+    .howto-btn {
+      width: 150px;
+      padding: 10px;
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #01A99D;
+      color: white;
+      border: none;
+      margin-left: 30px;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        color: white;
+        background-color: #00877E;
+      }
+    }
+  }
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
-  .card-trip-infos {
+  .banner-info {
     margin-left: 15px;
     display: block;
   }
 
-  .howto-product {
-    padding-left: 15px;
+  .howto-product img {
+    padding-left: 10px;
     display: block;
   }
 
@@ -174,10 +187,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 .headline {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .card-product {
@@ -187,50 +202,47 @@ body {
   display: flex;
   align-items: right;
   margin-bottom: 40px;
-}
-
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
-
-.card-product h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-product .card-product-infos {
-  padding: 16px;
-}
-
-a {
-  font-size: 16px;
-  text-decoration: none;
-  color: #01A99D !important;
+  img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .card-product-infos {
+    padding: 16px;
+  }
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #01A99D !important;
+  }
 }
 
 .swiper-container {
   width: 100%;
   height: 320px;
   background: #F2F2F2;
-  .swiper-wrapper {
-    // padding-left: 50px;
-    // padding-right: 50px;
-  }
 }
 
 .slide-product {
   width: 150px;
   height: 300px;
   overflow: none;
+  img {
+    width: 100%;
+    display: flex;
+    position: relative;
+    object-fit: cover;
+  }
 }
 
-.slide-product img {
-  width: 100%;
-  display: flex;
-  position: relative;
-  object-fit: cover;
+.footer p {
+  text-align: center;
+  color: #F2F2F2;
+  padding: 30px;
+  margin-top: 40px;
 }
-
