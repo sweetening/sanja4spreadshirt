@@ -1,25 +1,16 @@
 <html>
   <head>
-    <link rel="stylesheet" href="stylesheet.scss">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>Sanja4Spreadshirt</title>
+    <meta name= "description" content= "Sanja's Spreadshirt CYO test page">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="/scripts/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-      // core version + navigation, pagination modules:
-      import Swiper, { Navigation, Pagination } from 'swiper';
-
-      // configure Swiper to use modules
-      Swiper.use([Navigation, Pagination]);
-    </script>
   </head>
 
   <body>
-  <title>Sanja4Spreadshirt</title>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <meta name= "description" content= "Sanja's Spreadshirt CYO test page">
-    <meta charset="utf-8">
     <div class="banner" style="background-image: url(https://image.spreadshirtmedia.net/content/f_auto,q_50/x_550,w_1920,h_600,c_crop/v27/cms/ml/teaser/Teaser_after_winter_Shirt_EN);">
       <div class="container">
         <div class="card-trip-infos">
@@ -32,24 +23,30 @@
       </div>
     </div>
 
-    <div class="icons">
-      <div class="icon-product">
-        <img src="../icons/percentage.svg" />
-        <div class="card-product-infos">
+    <div class="grid">
+      <div class="media">
+        <div class="media-icon">
+          <img src="../icons/percentage.svg" alt="Percentage Icon" />
+        </div>
+        <div class="media-body">
           <h2>Lorem. Ipsum.</h2>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
-      <div class="icon-product">
-        <img src="../icons/pencil.svg" />
-        <div class="card-product-infos">
+      <div class="media">
+        <div class="media-icon">
+          <img src="../icons/pencil.svg" alt="Pencil Icon" />
+        </div>
+        <div class="media-body">
           <h2>Lorem ipsum</h2>
           <p>lorem ipsum dolor sit amet</p>
         </div>
       </div>
-      <div class="icon-product">
-        <img src="../icons/product-pile.svg" />
-        <div class="card-product-infos">
+      <div class="media">
+        <div class="media-icon">
+          <img src="../icons/product-pile.svg" alt="Product Pile Icon" />
+        </div>
+        <div class="media-body">
           <h2>Lorem ipsum</h2>
           <p>lorem ipsum dolor sit amet</p>
         </div>
@@ -58,7 +55,7 @@
     <div class="headline">
      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
     </div>
-    <div class="icons">
+    <div class="grid">
       <div class="card-product">
         <div class="card-product-infos">
           <h2>Lorem</h2>
@@ -84,31 +81,19 @@
       </div>
     </div>
 
-    <div class="headline">
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-    </div>
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        </div>
-          <div class="swiper-pagination"></div>
-        <button type="submit" class="btn">Click Here</button>
+    <div class="swiper-container">
+      <div class="headline">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
       </div>
-      <!-- Swiper JS -->
-      <script src="../package/swiper-bundle.min.js"></script>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="products-slider">
+          <!-- Slides -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
     <div class="howto-container">
       <div class="headline">
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
